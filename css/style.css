@@ -1,0 +1,204 @@
+:root{
+  --background: #ffc4b0;
+  --main-color: #E7F2F8;
+  --title: #4e8a96;
+  --strong-color: #172125;
+
+}
+
+body{
+  overflow-x: hidden;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.popupNameSort{
+  align-items: center;
+  background-color: var(--main-color);
+  border: 2px solid var(--strong-color);
+  border-radius: 8px;
+  color: var(--strong-color);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 8px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.principal{
+  display: flex;
+  background-color: var(--background);
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.sectionForm{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem 0 ;
+  width: 100%;
+}
+
+.sectionForm__formNames{
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  color: var(--strong-color);
+  display: flex;
+  font-weight: 400;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.sectionForm__title,.sectionList__title {
+  text-align: center;
+}
+
+.sectionForm__formNames___input{
+  border: 1px solid var(--strong-color);
+  border-radius: 8px;
+  margin: 0 1rem;
+}
+
+.sectionForm__formNames___btn--submit,.sectionList__sort{
+  color: var(--main-color);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 8px;
+  background-color: var(--title);
+  height: 40px;
+  width: 180px;
+  transition: .5s;
+}
+.popupNameSort__button{
+  color: var(--main-color);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 8px;
+  background-color: var(--title);
+  height: 40px;
+  width: 140px;
+  transition: .5s;
+}
+.popupNameSort__button{
+  color: var(--strong-color);
+  background-color: transparent;
+  border: 1px solid var(--strong-color);
+}
+.sectionForm__formNames___btn--submit:hover{
+  color: var(--strong-color);
+  background-color: transparent;
+  border: 1px solid var(--strong-color);
+}
+
+.sectionList__sort:hover{
+  color: var(--strong-color);
+  background-color: transparent;
+  border: 1px solid var(--strong-color);
+}
+
+.sectionList{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem 0 ;
+  gap: 1rem;
+  width: 100%;
+}
+.sectionList__list{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+.sectionList__list___item{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  color: var(--strong-color);
+  background-color: var(--main-color);
+  justify-content: center;
+  border-radius: 8px;
+  padding: .5rem;
+  min-height: 40px;
+  width: 240px;
+}
+
+.sectionList__list___item____text{
+  text-wrap: wrap;
+  margin: 0 auto;
+}
+
+.sectionList__list___item____btn--delete{
+  border: none;
+  background: url("/imgs/close.svg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.sectionList__list___item____btn--delete:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 0){
+  .popupNameSort{
+    font-size: 1.2rem;
+    font-weight: 400;
+    top: calc(51vh - (218px / 2));
+    left: calc(50vw - (278px / 2) );
+    height: 200px;
+    width: 250px;
+  }
+  .sectionForm__title,.sectionList__title {
+    color: var(--title);
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .sectionForm__formNames{
+    height: 380px;
+    width: 250px;
+  }
+  .sectionForm__formNames___label{
+    font-size: 1rem;
+  }
+  .sectionForm__formNames___input{
+    height: 30px;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 760px){
+  .popupNameSort{
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: calc(51vh - (418px / 2));
+    left: calc(50vw - (578px / 2) );
+    height: 400px;
+    width: 560px;
+  }
+  .sectionForm__title,.sectionList__title {
+    color: var(--title);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .sectionForm__formNames{
+    height: 380px;
+    width: 560px;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador De Nomes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="principal">
+    <section class="sectionForm">
+      <h1 class="sectionForm__title">Sorteador de nomes</h1>
+      <form class="sectionForm__formNames">
+        <label for="name" class="sectionForm__formNames___label">Nome</label>
+        <input type="text" required class="sectionForm__formNames___input" id="name">
+        <button type="submit" class="sectionForm__formNames___btn--submit" >Adicionar</button>
+      </form>
+    </section>
+    <section class="sectionList">
+      <h2 class="sectionList__title">Lista de participantes</h2>
+      <button class="sectionList__sort">Sortear</button>
+      <ul class="sectionList__list">
+        <li class="sectionList__list___item"><p class="sectionList__list___item____text">Richard</p><button class="sectionList__list___item____btn--delete"></button></li>
+      </ul>
+    </section>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>
